@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramadan design</title>
     <style>
         *{
@@ -22,7 +23,7 @@
             height: 95vh;
             position: relative;
         }
-        .masque1{
+        .masque2{
             margin-top: 7%;
             width: 100%;
             height: 38vh;
@@ -35,7 +36,7 @@
             position: relative;
             animation: animate 15s linear infinite;
         }
-        .masque{
+        .masque1{
             /* margin-top: 1%; */
             width: 100%;
             height: 44vh;
@@ -66,15 +67,7 @@
             font-family: var(--fontFmily);
             
         }
-        /* .ramdan-mubarak{
-            padding-top: 3.5em;
-            text-align: center;
-            line-height: 1;
-        } */
-        /* .ramdan-mubarak p{
-            font-size: 30px;
 
-        } */
         h1::before{
             content: "";
             position: absolute;
@@ -84,11 +77,77 @@
             border-left: 10px solid #fff;
             transform: rotate(-40deg);
             border-radius: 50%;
-            /* transform: scaleX(-1); */
+    
             top: 10%;
             left: 7%;
             box-shadow: -14px 1px 10px rgba(0, 0, 0, 0.1);
             
+        }
+        @media only screen and (max-width: 768px){
+            
+            .ramdan-mubarak{
+                line-height: normal;
+            }
+            .ramdan-mubarak h1{
+                font-size: 40px;
+                padding-top: 2em;
+                margin-left: 60px;
+            }
+            .ramdan-mubarak p{
+                font-size: 20px;
+                margin-left: 60px;
+            }
+            .masque2{
+                padding-top: 22%;
+                background-size: 300px;
+                background-repeat: repeat-x;
+            }
+            .masque1{
+                background-size: 300px;
+            }
+            h1::before{
+                width: 70px;
+                height: 70px;
+                top: 6%;
+                left: 8%;
+            }
+
+
+        }
+        @media only screen and (max-width: 390px){
+            .main{
+                height: 100vh;
+            }
+            h1::before{
+                width: 60px;
+                height: 60px;
+                border-width: 5px;
+                top: 5%;
+                left: 35%;
+            }
+
+            .ramdan-mubarak{
+                line-height: normal;
+            }
+            .ramdan-mubarak h1{
+                font-size: 30px;
+                padding-top: 5em;
+                margin-left: -10px;
+            }
+            .ramdan-mubarak p{
+                font-size: 15px;
+                /* padding-top: 2em; */
+                margin-left: -30px;
+            }
+            .masque2{
+                padding-top: 110%;
+                background-size: 300px;
+                background-repeat: repeat-x;
+            }
+            .masque1{
+                padding-top: 90%;
+            }
+
         }
     </style>
 </head>
@@ -101,8 +160,8 @@
             </div>
         </div>
         
-        <div class="masque"></div>
         <div class="masque1"></div>
+        <div class="masque2"></div>
         
 
     </div>
