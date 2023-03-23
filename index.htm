@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan design</title>
+    <style>
+        *{
+            --fontFmily: "DM sans";
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            padding: 0;
+            margin: 0;
+            background-image: linear-gradient(#ffeb3b, #e91e63 );
+            width: 100%;
+            height: 95vh;
+            position: relative;
+        }
+        .masque1{
+            margin-top: 7%;
+            width: 100%;
+            height: 38vh;
+            border: none;
+            background-image: url('./masques.png');
+            
+            background-position:  left top;
+            /* background-repeat: no-repeat; */
+            background-size: 450px;
+            position: relative;
+            animation: animate 15s linear infinite;
+        }
+        .masque{
+            /* margin-top: 1%; */
+            width: 100%;
+            height: 44vh;
+            border: none;
+            background-image: url('./masque.png');
+            
+            background-position: left top;
+            background-repeat: repeat-x;
+            background-size: 400px;
+            background-position: left bottom;
+            position: absolute;
+            top: 17em;
+            opacity: 0.1;
+            animation: animate 10s linear infinite;
+            animation-fill-mode: forwards;
+        }
+        @keyframes animate{
+            0%{background-position: 0%;}
+            100%{background-position: 100%;}
+        }
+        
+        .section{
+            padding-top: 1.3em;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 35px;
+            font-family: var(--fontFmily);
+            
+        }
+        /* .ramdan-mubarak{
+            padding-top: 3.5em;
+            text-align: center;
+            line-height: 1;
+        } */
+        /* .ramdan-mubarak p{
+            font-size: 30px;
+
+        } */
+        h1::before{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: transparent;
+            border-left: 10px solid #fff;
+            transform: rotate(-40deg);
+            border-radius: 50%;
+            /* transform: scaleX(-1); */
+            top: 10%;
+            left: 7%;
+            box-shadow: -14px 1px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="section">
+            <div class="ramdan-mubarak">
+                <h1>RAMADAN MUBARAK</h1>
+                <P>All Muslims around the world </P>
+            </div>
+        </div>
+        
+        <div class="masque"></div>
+        <div class="masque1"></div>
+        
+
+    </div>
+</body>
+</html>
