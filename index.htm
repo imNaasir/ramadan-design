@@ -170,7 +170,7 @@
         } 
         
         /*---- Desktop screen -----*/
-        @media only screen and (max-width: 2560px) and (min-width: 2000px){
+        @media only screen and (max-width: 2560px) and (min-width: 2500px){
             .main{
                 height: 1600px;
                 box-sizing: border-box;
@@ -205,6 +205,46 @@
                 background-repeat: repeat-x;
             }
         }
+
+        /* iphone 6/7/8 plus */
+        @media only screen and (max-width: 414px) and (min-width: 300px){
+            .main{
+                height: 100vh;
+                box-sizing: border-box;
+                overflow: hidden;
+                /* background-color: #ffeb3b; */
+            }
+            h1::before{
+                width: 70px;
+                height: 70px;
+                border-width: 5px;
+                top: 2%;
+                left: 15%;
+            }
+            .ramdan-mubarak{
+                line-height: normal;
+            }
+            .ramdan-mubarak h1{
+                font-size: 4rem;
+                /* padding-top: 1.5em; */
+                margin: 90px 30px;
+            }
+            .ramdan-mubarak p{
+                margin-top: -60px;
+                font-size: 1rem;
+            }
+            .masque2{
+                margin-top: 26%;
+                background-size: 400px;
+                background-repeat: repeat-x;
+            }
+            .masque1{
+                margin-top: 25%;
+                background-size: 500px;
+                background-repeat: repeat-x;
+            }
+        }
+
     </style>
 </head>
 <body>
